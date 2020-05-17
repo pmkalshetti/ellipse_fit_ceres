@@ -1,0 +1,55 @@
+iter      cost      cost_change  |gradient|   |step|    tr_ratio  tr_radius  ls_iter  iter_time  total_time
+   0  1.057853e+03    0.00e+00    1.06e+03   0.00e+00   0.00e+00  1.00e+04        0    2.08e-04    5.18e-04
+   1  9.724331e+01    9.61e+02    1.90e+02   6.45e+00   9.08e-01  2.19e+04        1    6.10e-04    1.20e-03
+   2  5.941406e+00    9.13e+01    2.76e+01   2.92e+00   9.39e-01  6.57e+04        1    4.70e-04    1.69e-03
+   3  4.776210e-03    5.94e+00    8.55e-01   4.86e-01   1.00e+00  1.97e+05        1    4.44e-04    2.18e-03
+   4  4.242198e-03    5.34e-04    2.00e-04   6.49e-03   1.00e+00  5.92e+05        1    4.35e-04    2.63e-03
+   5  4.242189e-03    9.10e-09    7.11e-06   6.89e-05   9.79e-01  1.77e+06        1    4.43e-04    3.09e-03
+
+Solver Summary (v 1.14.0-eigen-(3.3.7)-lapack-suitesparse-(5.7.2)-cxsparse-(3.2.0)-eigensparse-no_openmp-no_tbb)
+
+                                     Original                  Reduced
+Parameter blocks                          101                      101
+Parameters                                105                      105
+Residual blocks                           100                      100
+Residuals                                 200                      200
+
+Minimizer                        TRUST_REGION
+
+Sparse linear algebra library    SUITE_SPARSE
+Trust region strategy     LEVENBERG_MARQUARDT
+
+                                        Given                     Used
+Linear solver                    SPARSE_SCHUR             SPARSE_SCHUR
+Threads                                     1                        1
+Linear solver ordering                  100,1                    100,1
+Schur structure                         2,1,5                    2,d,d
+
+Cost:
+Initial                          1.057853e+03
+Final                            4.242189e-03
+Change                           1.057849e+03
+
+Minimizer iterations                        6
+Successful steps                            6
+Unsuccessful steps                          0
+
+Time (in seconds):
+Preprocessor                         0.000310
+
+  Residual only evaluation           0.000496 (6)
+  Jacobian & residual evaluation     0.001142 (6)
+  Linear solver                      0.001093 (6)
+Minimizer                            0.003042
+
+Postprocessor                        0.000010
+Total                                0.003362
+
+Termination:                      CONVERGENCE (Function tolerance reached. |cost_change|/cost: 1.616076e-09 <= 1.000000e-06)
+
+initial params	final params	groundtruth params
+7.954		        7.497		      7.5
+6.261		        2.001		      2
+17.64		        17		        17
+19.33		        23		        23
+0		            0.2303		    0.23
